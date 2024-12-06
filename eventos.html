@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do ZN Club</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100%; font-family: 'Arial', sans-serif; background: #111; color: white; }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f56b2a;
+            color: white;
+        }
+        .heading {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .events {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .event-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        .event-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .event-card p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .event-btn {
+            padding: 10px 20px;
+            background-color: #f56b2a;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+        }
+        .event-btn:hover {
+            background-color: #f5b041;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="heading">Eventos do ZN Club</h1>
+        <p>Confira os eventos imperdíveis que estão por vir!</p>
+    </div>
+
+    <div class="events">
+        <div class="event-card">
+            <h3>Evento 1: Festa de Boas-Vindas</h3>
+            <p>Data: 15 de Dezembro de 2024</p>
+            <p>Prepare-se para uma noite de diversão e boas energias! Não perca!</p>
+            <button class="event-btn" onclick="window.location.href='https://discord.gg/6q7r2C8Ze2'">Participar</button>
+        </div>
+        <div class="event-card">
+            <h3>Evento 2: Torneio de Jogos</h3>
+            <p>Data: 20 de Dezembro de 2024</p>
+            <p>Conquiste a vitória e mostre suas habilidades em nosso torneio especial.</p>
+            <button class="event-btn" onclick="window.location.href='https://discord.gg/6q7r2C8Ze2'">Participar</button>
+        </div>
+        <div class="event-card">
+            <h3>Evento 3: Noite de Filmes</h3>
+            <p>Data: 25 de Dezembro de 2024</p>
+            <p>Assista aos melhores filmes com a nossa comunidade no evento de Natal.</p>
+            <button class="event-btn" onclick="window.location.href='https://discord.gg/6q7r2C8Ze2'">Participar</button>
+        </div>
+    </div>
+
+</body>
+</html>
